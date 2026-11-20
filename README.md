@@ -59,7 +59,7 @@ flowchart TD
 - **Profiles** for the XCD 28P, 35-100, 38V, 25V, 55V, 90V, 120 Macro and 135, each in four versions for
   tungsten, warm, daylight and shade light, picked automatically from each photo's white balance. Profiles
   for any other XCD lens can be made from one of your raws.
-- **Lens correction maps** for the 57 lens settings measured so far. Capture One's LCCs are made from them
+- **Lens correction maps** for the 60 lens settings measured so far. Capture One's LCCs are made from them
   on your own computer, because each LCC records your camera's serial number. Maps for new settings can be
   measured with Phocus.
 - **Tools** that do all of this with one command.
@@ -101,7 +101,7 @@ Your raw files aren't touched.
 A typical line of output:
 
 ```
-B0000919.3FR: XCD28P_28mm_f8.0_d0.npz, exposure +0.001 EV, LCC XCD28P_28mm_f8p0_d0, profile HNCS E5 28P
+B0000919.3FR: XCD28P_28mm_f8.0_d0.npz, exposure -0.014 EV, LCC XCD28P_28mm_f8p0_d0, profile HNCS E5 28P
 ```
 
 ### The first time you use a lens or lens setting
@@ -168,7 +168,7 @@ build anything:
 ## Repository layout
 
 ```
-profiles/   Capture One camera profiles ("HNCS E5 <lens>", plus Shade and Tungsten; E5 is the version)
+profiles/   Capture One camera profiles ("HNCS E5 <lens>", plus Tungsten, Warm and Shade; E5 is the version)
 tools/      prepare_folder.py and the scripts behind it (see tools/README.md)
 fit/        fitted colour tables, lens correction maps, and the data needed to rebuild them
 docs/       how it was measured and everything found along the way
@@ -176,6 +176,8 @@ docs/       how it was measured and everything found along the way
 
 ## More detail
 
+- [docs/phocus-hncs.md](docs/phocus-hncs.md): everything learned about how Phocus renders an X2D II raw,
+  and a table of the corrections each raw gets, by body, lens, light and lens setting.
 - [docs/methodology.md](docs/methodology.md): how Phocus's colour and lens correction were measured,
   and how they're reproduced.
 - [tools/README.md](tools/README.md): the scripts.

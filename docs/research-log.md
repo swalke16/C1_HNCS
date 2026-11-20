@@ -1,6 +1,6 @@
 # Research log: reverse-engineering Phocus with synthetic raws
 
-Working notes for a later write-up. Dated entries, newest last. Numbers are ΔE00 (CIEDE2000) unless
+Working notes behind [phocus-hncs.md](phocus-hncs.md). Dated entries, newest last. Numbers are ΔE00 (CIEDE2000) unless
 stated; "greys" means near-neutral patches or blocks. Camera: Hasselblad X2D II 100C; Phocus 4.2.2 (Mac);
 Capture One 16.9.
 
